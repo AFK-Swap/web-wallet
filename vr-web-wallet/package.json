@@ -1,0 +1,52 @@
+{
+  "name": "vr-web-wallet",
+  "version": "1.0.0",
+  "description": "Professional VR-optimized SSI Web Wallet using Aries Framework JavaScript",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "start": "next start -p 3001",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit",
+    "test:anoncreds": "echo 'Navigate to http://localhost:3001/anoncreds-test to test AnonCreds integration'",
+    "setup:anoncreds": "echo 'AnonCreds setup complete. BCovrin ledger: http://dev.greenlight.bcovrin.vonx.io/browse'",
+    "wallet-agent": "npx ts-node --project tsconfig.server.json wallet-agent-server.ts"
+  },
+  "dependencies": {
+    "@hyperledger/anoncreds-nodejs": "^0.2.4",
+    "@hyperledger/aries-askar-nodejs": "^0.2.3",
+    "@hyperledger/indy-vdr-nodejs": "^0.2.2",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.8.0",
+    "@types/qrcode": "^1.5.2",
+    "@types/react": "^18.2.25",
+    "@types/react-dom": "^18.2.11",
+    "@types/uuid": "^9.0.7",
+    "autoprefixer": "^10.4.16",
+    "axios": "^1.5.0",
+    "clsx": "^2.0.0",
+    "cors": "^2.8.5",
+    "date-fns": "^2.30.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "lucide-react": "^0.294.0",
+    "next": "^14.0.0",
+    "next-pwa": "^5.6.0",
+    "postcss": "^8.4.31",
+    "qrcode": "^1.5.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.3.5",
+    "typescript": "^5.2.2",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.9.0",
+    "@typescript-eslint/parser": "^6.9.0",
+    "eslint": "^8.51.0",
+    "eslint-config-next": "14.0.0",
+    "ts-node": "^10.9.2"
+  }
+}
